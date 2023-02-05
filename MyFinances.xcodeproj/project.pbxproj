@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C316DA7B65891E1A2BA49D2 /* Pods_MyFinances.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E314FF8A2EF7F80E671B0949 /* Pods_MyFinances.framework */; };
+		B90C129C29900BBE0075BE51 /* SavingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C129B29900BBE0075BE51 /* SavingType.swift */; };
+		B9245A86298C17AC000C5823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9245A85298C17AC000C5823 /* AppDelegate.swift */; };
+		B9245A88298C17AC000C5823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9245A87298C17AC000C5823 /* SceneDelegate.swift */; };
+		B9245A8D298C17AC000C5823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9245A8B298C17AC000C5823 /* Main.storyboard */; };
+		B9245A8F298C17AE000C5823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9245A8E298C17AE000C5823 /* Assets.xcassets */; };
+		B9245A92298C17AE000C5823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9245A90298C17AE000C5823 /* LaunchScreen.storyboard */; };
+		B9245A9E298C1AA4000C5823 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9245A9D298C1AA4000C5823 /* RealmManager.swift */; };
+		B9245AA3298C1C44000C5823 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9245AA2298C1C44000C5823 /* TabBarController.swift */; };
+		B9245AA5298C1C50000C5823 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9245AA4298C1C50000C5823 /* TabItem.swift */; };
+		B9245AA9298C1CB7000C5823 /* FinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9245AA7298C1CB7000C5823 /* FinanceViewController.swift */; };
+		B9245AAA298C1CB7000C5823 /* FinanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9245AA8298C1CB7000C5823 /* FinanceViewController.xib */; };
+		B9245AAF298C1CE1000C5823 /* ChangeFInanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9245AAD298C1CE1000C5823 /* ChangeFInanceViewController.swift */; };
+		B9245AB0298C1CE1000C5823 /* ChangeFInanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9245AAE298C1CE1000C5823 /* ChangeFInanceViewController.xib */; };
+		B9245AB4298C1CF8000C5823 /* StatisticsFinansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9245AB2298C1CF8000C5823 /* StatisticsFinansViewController.swift */; };
+		B9245AB5298C1CF8000C5823 /* StatisticsFinansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9245AB3298C1CF8000C5823 /* StatisticsFinansViewController.xib */; };
+		B9245AB8298C224E000C5823 /* UiViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9245AB7298C224E000C5823 /* UiViewExtension.swift */; };
+		B92788A3298C7D0900047D9E /* MoneyTypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92788A1298C7D0900047D9E /* MoneyTypesTableViewController.swift */; };
+		B92788A4298C7D0900047D9E /* MoneyTypesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92788A2298C7D0900047D9E /* MoneyTypesTableViewController.xib */; };
+		B92788A8298C7D2800047D9E /* MoneyTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92788A6298C7D2800047D9E /* MoneyTypeCell.swift */; };
+		B92788A9298C7D2800047D9E /* MoneyTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92788A7298C7D2800047D9E /* MoneyTypeCell.xib */; };
+		B92788AC298C860D00047D9E /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92788AB298C860D00047D9E /* Delegates.swift */; };
+		B92788B0298D8BE000047D9E /* RealmFinanceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92788AF298D8BE000047D9E /* RealmFinanceType.swift */; };
+		B92788B6298DBB4200047D9E /* AddFinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92788B4298DBB4200047D9E /* AddFinanceViewController.swift */; };
+		B92788B7298DBB4200047D9E /* AddFinanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92788B5298DBB4200047D9E /* AddFinanceViewController.xib */; };
+		B980B471298C2A7200B81B1F /* FinanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980B46F298C2A7200B81B1F /* FinanceCell.swift */; };
+		B980B472298C2A7200B81B1F /* FinanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B980B470298C2A7200B81B1F /* FinanceCell.xib */; };
+		B9A0B401298ED6C4005C3D7E /* ChangeFinanceControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B400298ED6C4005C3D7E /* ChangeFinanceControllerType.swift */; };
+		B9A0B405298EF93A005C3D7E /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B404298EF93A005C3D7E /* UIImageExtension.swift */; };
+		B9A0B40B298F0CF7005C3D7E /* FinanceHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B409298F0CF7005C3D7E /* FinanceHistoryViewController.swift */; };
+		B9A0B40C298F0CF7005C3D7E /* FinanceHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A0B40A298F0CF7005C3D7E /* FinanceHistoryViewController.xib */; };
+		B9A0B410298F0D0F005C3D7E /* FinanceHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B40E298F0D0F005C3D7E /* FinanceHistoryCell.swift */; };
+		B9A0B411298F0D0F005C3D7E /* FinanceHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A0B40F298F0D0F005C3D7E /* FinanceHistoryCell.xib */; };
+		B9A0B415298F1E3C005C3D7E /* RealmFinancePlusValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B414298F1E3C005C3D7E /* RealmFinancePlusValueModel.swift */; };
+		B9A0B417298F1E98005C3D7E /* RealmFinanceMinusValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B416298F1E97005C3D7E /* RealmFinanceMinusValueModel.swift */; };
+		B9A0B41A298FCA90005C3D7E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B419298FCA90005C3D7E /* UIColorExtension.swift */; };
+		B9A0B41C298FCC96005C3D7E /* RealmColorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B41B298FCC96005C3D7E /* RealmColorClass.swift */; };
+		B9A0B421298FEF31005C3D7E /* ConverterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B41E298FEF31005C3D7E /* ConverterModel.swift */; };
+		B9A0B422298FEF31005C3D7E /* ConverterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B41F298FEF31005C3D7E /* ConverterAPI.swift */; };
+		B9A0B423298FEF31005C3D7E /* ConverterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A0B420298FEF31005C3D7E /* ConverterProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5EA68674D1C8937F09A99F90 /* Pods-MyFinances.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFinances.release.xcconfig"; path = "Target Support Files/Pods-MyFinances/Pods-MyFinances.release.xcconfig"; sourceTree = "<group>"; };
+		81A0C69AA81EB9D0980FA2F0 /* Pods-MyFinances.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFinances.debug.xcconfig"; path = "Target Support Files/Pods-MyFinances/Pods-MyFinances.debug.xcconfig"; sourceTree = "<group>"; };
+		B90C129B29900BBE0075BE51 /* SavingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingType.swift; sourceTree = "<group>"; };
+		B9245A82298C17AC000C5823 /* MyFinances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFinances.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9245A85298C17AC000C5823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9245A87298C17AC000C5823 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B9245A8C298C17AC000C5823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9245A8E298C17AE000C5823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9245A91298C17AE000C5823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9245A93298C17AE000C5823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9245A9D298C1AA4000C5823 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B9245AA2298C1C44000C5823 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B9245AA4298C1C50000C5823 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		B9245AA7298C1CB7000C5823 /* FinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewController.swift; sourceTree = "<group>"; };
+		B9245AA8298C1CB7000C5823 /* FinanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinanceViewController.xib; sourceTree = "<group>"; };
+		B9245AAD298C1CE1000C5823 /* ChangeFInanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeFInanceViewController.swift; sourceTree = "<group>"; };
+		B9245AAE298C1CE1000C5823 /* ChangeFInanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeFInanceViewController.xib; sourceTree = "<group>"; };
+		B9245AB2298C1CF8000C5823 /* StatisticsFinansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsFinansViewController.swift; sourceTree = "<group>"; };
+		B9245AB3298C1CF8000C5823 /* StatisticsFinansViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsFinansViewController.xib; sourceTree = "<group>"; };
+		B9245AB7298C224E000C5823 /* UiViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewExtension.swift; sourceTree = "<group>"; };
+		B92788A1298C7D0900047D9E /* MoneyTypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTypesTableViewController.swift; sourceTree = "<group>"; };
+		B92788A2298C7D0900047D9E /* MoneyTypesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyTypesTableViewController.xib; sourceTree = "<group>"; };
+		B92788A6298C7D2800047D9E /* MoneyTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTypeCell.swift; sourceTree = "<group>"; };
+		B92788A7298C7D2800047D9E /* MoneyTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyTypeCell.xib; sourceTree = "<group>"; };
+		B92788AB298C860D00047D9E /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
+		B92788AF298D8BE000047D9E /* RealmFinanceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFinanceType.swift; sourceTree = "<group>"; };
+		B92788B4298DBB4200047D9E /* AddFinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFinanceViewController.swift; sourceTree = "<group>"; };
+		B92788B5298DBB4200047D9E /* AddFinanceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddFinanceViewController.xib; sourceTree = "<group>"; };
+		B980B46F298C2A7200B81B1F /* FinanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceCell.swift; sourceTree = "<group>"; };
+		B980B470298C2A7200B81B1F /* FinanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinanceCell.xib; sourceTree = "<group>"; };
+		B9A0B400298ED6C4005C3D7E /* ChangeFinanceControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeFinanceControllerType.swift; sourceTree = "<group>"; };
+		B9A0B404298EF93A005C3D7E /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		B9A0B409298F0CF7005C3D7E /* FinanceHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceHistoryViewController.swift; sourceTree = "<group>"; };
+		B9A0B40A298F0CF7005C3D7E /* FinanceHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinanceHistoryViewController.xib; sourceTree = "<group>"; };
+		B9A0B40E298F0D0F005C3D7E /* FinanceHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceHistoryCell.swift; sourceTree = "<group>"; };
+		B9A0B40F298F0D0F005C3D7E /* FinanceHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinanceHistoryCell.xib; sourceTree = "<group>"; };
+		B9A0B414298F1E3C005C3D7E /* RealmFinancePlusValueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFinancePlusValueModel.swift; sourceTree = "<group>"; };
+		B9A0B416298F1E97005C3D7E /* RealmFinanceMinusValueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFinanceMinusValueModel.swift; sourceTree = "<group>"; };
+		B9A0B419298FCA90005C3D7E /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		B9A0B41B298FCC96005C3D7E /* RealmColorClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmColorClass.swift; sourceTree = "<group>"; };
+		B9A0B41E298FEF31005C3D7E /* ConverterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterModel.swift; sourceTree = "<group>"; };
+		B9A0B41F298FEF31005C3D7E /* ConverterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterAPI.swift; sourceTree = "<group>"; };
+		B9A0B420298FEF31005C3D7E /* ConverterProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterProvider.swift; sourceTree = "<group>"; };
+		E314FF8A2EF7F80E671B0949 /* Pods_MyFinances.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFinances.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9245A7F298C17AC000C5823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C316DA7B65891E1A2BA49D2 /* Pods_MyFinances.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0539034BBB3B99A9AE0828EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E314FF8A2EF7F80E671B0949 /* Pods_MyFinances.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66CEED1E3AE9C1D57D1CF105 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81A0C69AA81EB9D0980FA2F0 /* Pods-MyFinances.debug.xcconfig */,
+				5EA68674D1C8937F09A99F90 /* Pods-MyFinances.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9245A79298C17AC000C5823 = {
+			isa = PBXGroup;
+			children = (
+				B9245A84298C17AC000C5823 /* MyFinances */,
+				B9245A83298C17AC000C5823 /* Products */,
+				66CEED1E3AE9C1D57D1CF105 /* Pods */,
+				0539034BBB3B99A9AE0828EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9245A83298C17AC000C5823 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9245A82298C17AC000C5823 /* MyFinances.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9245A84298C17AC000C5823 /* MyFinances */ = {
+			isa = PBXGroup;
+			children = (
+				B9A0B41D298FEF31005C3D7E /* ConverterApi */,
+				B92788AA298C85FE00047D9E /* Protocolos */,
+				B980B473298C2BB500B81B1F /* Enum */,
+				B9245AB6298C223A000C5823 /* Extension */,
+				B9245AA1298C1BF2000C5823 /* TabBarController */,
+				B9245AA6298C1C9C000C5823 /* Controllers */,
+				B9245A9C298C1A96000C5823 /* RealmManager */,
+				B9245A99298C1A1B000C5823 /* Model */,
+				B9245A85298C17AC000C5823 /* AppDelegate.swift */,
+				B9245A87298C17AC000C5823 /* SceneDelegate.swift */,
+				B9245A8B298C17AC000C5823 /* Main.storyboard */,
+				B9245A8E298C17AE000C5823 /* Assets.xcassets */,
+				B9245A90298C17AE000C5823 /* LaunchScreen.storyboard */,
+				B9245A93298C17AE000C5823 /* Info.plist */,
+			);
+			path = MyFinances;
+			sourceTree = "<group>";
+		};
+		B9245A99298C1A1B000C5823 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B92788AF298D8BE000047D9E /* RealmFinanceType.swift */,
+				B9A0B414298F1E3C005C3D7E /* RealmFinancePlusValueModel.swift */,
+				B9A0B416298F1E97005C3D7E /* RealmFinanceMinusValueModel.swift */,
+				B9A0B41B298FCC96005C3D7E /* RealmColorClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9245A9C298C1A96000C5823 /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				B9245A9D298C1AA4000C5823 /* RealmManager.swift */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+		B9245AA1298C1BF2000C5823 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				B9245AA2298C1C44000C5823 /* TabBarController.swift */,
+				B9245AA4298C1C50000C5823 /* TabItem.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		B9245AA6298C1C9C000C5823 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9A0B408298F0CD2005C3D7E /* FinanceHistory */,
+				B92788B3298DBB2900047D9E /* AddFinanceViewController */,
+				B92788A0298C7CC900047D9E /* PopUpTableViewVC */,
+				B9245AB1298C1CE3000C5823 /* StatisticsViewController */,
+				B9245AAC298C1CC2000C5823 /* ChangeFinanceController */,
+				B9245AAB298C1CBA000C5823 /* FinanceController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B9245AAB298C1CBA000C5823 /* FinanceController */ = {
+			isa = PBXGroup;
+			children = (
+				B980B46E298C267A00B81B1F /* Cell */,
+				B9245AA7298C1CB7000C5823 /* FinanceViewController.swift */,
+				B9245AA8298C1CB7000C5823 /* FinanceViewController.xib */,
+			);
+			path = FinanceController;
+			sourceTree = "<group>";
+		};
+		B9245AAC298C1CC2000C5823 /* ChangeFinanceController */ = {
+			isa = PBXGroup;
+			children = (
+				B9245AAD298C1CE1000C5823 /* ChangeFInanceViewController.swift */,
+				B9245AAE298C1CE1000C5823 /* ChangeFInanceViewController.xib */,
+			);
+			path = ChangeFinanceController;
+			sourceTree = "<group>";
+		};
+		B9245AB1298C1CE3000C5823 /* StatisticsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B9245AB2298C1CF8000C5823 /* StatisticsFinansViewController.swift */,
+				B9245AB3298C1CF8000C5823 /* StatisticsFinansViewController.xib */,
+			);
+			path = StatisticsViewController;
+			sourceTree = "<group>";
+		};
+		B9245AB6298C223A000C5823 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B9245AB7298C224E000C5823 /* UiViewExtension.swift */,
+				B9A0B404298EF93A005C3D7E /* UIImageExtension.swift */,
+				B9A0B419298FCA90005C3D7E /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B92788A0298C7CC900047D9E /* PopUpTableViewVC */ = {
+			isa = PBXGroup;
+			children = (
+				B92788A5298C7D0C00047D9E /* Cell */,
+				B92788A1298C7D0900047D9E /* MoneyTypesTableViewController.swift */,
+				B92788A2298C7D0900047D9E /* MoneyTypesTableViewController.xib */,
+			);
+			path = PopUpTableViewVC;
+			sourceTree = "<group>";
+		};
+		B92788A5298C7D0C00047D9E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B92788A6298C7D2800047D9E /* MoneyTypeCell.swift */,
+				B92788A7298C7D2800047D9E /* MoneyTypeCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B92788AA298C85FE00047D9E /* Protocolos */ = {
+			isa = PBXGroup;
+			children = (
+				B92788AB298C860D00047D9E /* Delegates.swift */,
+			);
+			path = Protocolos;
+			sourceTree = "<group>";
+		};
+		B92788B3298DBB2900047D9E /* AddFinanceViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B92788B4298DBB4200047D9E /* AddFinanceViewController.swift */,
+				B92788B5298DBB4200047D9E /* AddFinanceViewController.xib */,
+			);
+			path = AddFinanceViewController;
+			sourceTree = "<group>";
+		};
+		B980B46E298C267A00B81B1F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B980B46F298C2A7200B81B1F /* FinanceCell.swift */,
+				B980B470298C2A7200B81B1F /* FinanceCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B980B473298C2BB500B81B1F /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				B9A0B400298ED6C4005C3D7E /* ChangeFinanceControllerType.swift */,
+				B90C129B29900BBE0075BE51 /* SavingType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		B9A0B408298F0CD2005C3D7E /* FinanceHistory */ = {
+			isa = PBXGroup;
+			children = (
+				B9A0B40D298F0CF9005C3D7E /* Cell */,
+				B9A0B409298F0CF7005C3D7E /* FinanceHistoryViewController.swift */,
+				B9A0B40A298F0CF7005C3D7E /* FinanceHistoryViewController.xib */,
+			);
+			path = FinanceHistory;
+			sourceTree = "<group>";
+		};
+		B9A0B40D298F0CF9005C3D7E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B9A0B40E298F0D0F005C3D7E /* FinanceHistoryCell.swift */,
+				B9A0B40F298F0D0F005C3D7E /* FinanceHistoryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B9A0B41D298FEF31005C3D7E /* ConverterApi */ = {
+			isa = PBXGroup;
+			children = (
+				B9A0B41E298FEF31005C3D7E /* ConverterModel.swift */,
+				B9A0B41F298FEF31005C3D7E /* ConverterAPI.swift */,
+				B9A0B420298FEF31005C3D7E /* ConverterProvider.swift */,
+			);
+			path = ConverterApi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9245A81298C17AC000C5823 /* MyFinances */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9245A96298C17AE000C5823 /* Build configuration list for PBXNativeTarget "MyFinances" */;
+			buildPhases = (
+				2A0266E05284087D6ECE889E /* [CP] Check Pods Manifest.lock */,
+				B9245A7E298C17AC000C5823 /* Sources */,
+				B9245A7F298C17AC000C5823 /* Frameworks */,
+				B9245A80298C17AC000C5823 /* Resources */,
+				44B3B6D4869C2A13B9DB2457 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFinances;
+			productName = MyFinances;
+			productReference = B9245A82298C17AC000C5823 /* MyFinances.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9245A7A298C17AC000C5823 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					B9245A81298C17AC000C5823 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = B9245A7D298C17AC000C5823 /* Build configuration list for PBXProject "MyFinances" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9245A79298C17AC000C5823;
+			productRefGroup = B9245A83298C17AC000C5823 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9245A81298C17AC000C5823 /* MyFinances */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9245A80298C17AC000C5823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B92788A9298C7D2800047D9E /* MoneyTypeCell.xib in Resources */,
+				B9A0B411298F0D0F005C3D7E /* FinanceHistoryCell.xib in Resources */,
+				B9A0B40C298F0CF7005C3D7E /* FinanceHistoryViewController.xib in Resources */,
+				B9245A92298C17AE000C5823 /* LaunchScreen.storyboard in Resources */,
+				B9245AAA298C1CB7000C5823 /* FinanceViewController.xib in Resources */,
+				B92788A4298C7D0900047D9E /* MoneyTypesTableViewController.xib in Resources */,
+				B980B472298C2A7200B81B1F /* FinanceCell.xib in Resources */,
+				B9245AB0298C1CE1000C5823 /* ChangeFInanceViewController.xib in Resources */,
+				B9245A8F298C17AE000C5823 /* Assets.xcassets in Resources */,
+				B9245AB5298C1CF8000C5823 /* StatisticsFinansViewController.xib in Resources */,
+				B9245A8D298C17AC000C5823 /* Main.storyboard in Resources */,
+				B92788B7298DBB4200047D9E /* AddFinanceViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A0266E05284087D6ECE889E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFinances-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44B3B6D4869C2A13B9DB2457 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyFinances/Pods-MyFinances-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyFinances/Pods-MyFinances-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyFinances/Pods-MyFinances-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9245A7E298C17AC000C5823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9245AB4298C1CF8000C5823 /* StatisticsFinansViewController.swift in Sources */,
+				B9A0B410298F0D0F005C3D7E /* FinanceHistoryCell.swift in Sources */,
+				B9245A9E298C1AA4000C5823 /* RealmManager.swift in Sources */,
+				B9A0B405298EF93A005C3D7E /* UIImageExtension.swift in Sources */,
+				B92788A8298C7D2800047D9E /* MoneyTypeCell.swift in Sources */,
+				B90C129C29900BBE0075BE51 /* SavingType.swift in Sources */,
+				B9A0B40B298F0CF7005C3D7E /* FinanceHistoryViewController.swift in Sources */,
+				B9A0B41A298FCA90005C3D7E /* UIColorExtension.swift in Sources */,
+				B9A0B415298F1E3C005C3D7E /* RealmFinancePlusValueModel.swift in Sources */,
+				B9245AB8298C224E000C5823 /* UiViewExtension.swift in Sources */,
+				B9245AA3298C1C44000C5823 /* TabBarController.swift in Sources */,
+				B92788AC298C860D00047D9E /* Delegates.swift in Sources */,
+				B9A0B41C298FCC96005C3D7E /* RealmColorClass.swift in Sources */,
+				B9A0B421298FEF31005C3D7E /* ConverterModel.swift in Sources */,
+				B9A0B423298FEF31005C3D7E /* ConverterProvider.swift in Sources */,
+				B9245AAF298C1CE1000C5823 /* ChangeFInanceViewController.swift in Sources */,
+				B92788B6298DBB4200047D9E /* AddFinanceViewController.swift in Sources */,
+				B92788B0298D8BE000047D9E /* RealmFinanceType.swift in Sources */,
+				B9A0B422298FEF31005C3D7E /* ConverterAPI.swift in Sources */,
+				B9A0B401298ED6C4005C3D7E /* ChangeFinanceControllerType.swift in Sources */,
+				B92788A3298C7D0900047D9E /* MoneyTypesTableViewController.swift in Sources */,
+				B9A0B417298F1E98005C3D7E /* RealmFinanceMinusValueModel.swift in Sources */,
+				B9245A86298C17AC000C5823 /* AppDelegate.swift in Sources */,
+				B980B471298C2A7200B81B1F /* FinanceCell.swift in Sources */,
+				B9245AA5298C1C50000C5823 /* TabItem.swift in Sources */,
+				B9245AA9298C1CB7000C5823 /* FinanceViewController.swift in Sources */,
+				B9245A88298C17AC000C5823 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9245A8B298C17AC000C5823 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9245A8C298C17AC000C5823 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9245A90298C17AE000C5823 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9245A91298C17AE000C5823 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9245A94298C17AE000C5823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9245A95298C17AE000C5823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9245A97298C17AE000C5823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A0C69AA81EB9D0980FA2F0 /* Pods-MyFinances.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G264CBHMU9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyFinances/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Courses.MyFinances;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9245A98298C17AE000C5823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA68674D1C8937F09A99F90 /* Pods-MyFinances.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G264CBHMU9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyFinances/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Courses.MyFinances;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9245A7D298C17AC000C5823 /* Build configuration list for PBXProject "MyFinances" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9245A94298C17AE000C5823 /* Debug */,
+				B9245A95298C17AE000C5823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9245A96298C17AE000C5823 /* Build configuration list for PBXNativeTarget "MyFinances" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9245A97298C17AE000C5823 /* Debug */,
+				B9245A98298C17AE000C5823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9245A7A298C17AC000C5823 /* Project object */;
+}

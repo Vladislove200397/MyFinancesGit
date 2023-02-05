@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FinanceViewController" customModule="MyFinances" customModuleProvider="target">
+            <connections>
+                <outlet property="initialContentView" destination="OaZ-pO-W2Y" id="weo-fH-QcB"/>
+                <outlet property="tableView" destination="CyY-6I-GNd" id="Q6N-bs-8Ej"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyY-6I-GNd">
+                    <rect key="frame" x="0.0" y="142" width="390" height="702"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9C-eu-u6q">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="111"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Все сбережения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc7-9s-yee">
+                            <rect key="frame" x="16" y="76" width="358" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" red="0.86446496210000001" green="0.86446496210000001" blue="0.86446496210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Fc7-9s-yee" secondAttribute="bottom" constant="5" id="MtE-PZ-irh"/>
+                        <constraint firstAttribute="trailing" secondItem="Fc7-9s-yee" secondAttribute="trailing" constant="16" id="b9I-cU-XZY"/>
+                        <constraint firstItem="Fc7-9s-yee" firstAttribute="leading" secondItem="Q9C-eu-u6q" secondAttribute="leading" constant="16" id="jxb-rF-Gdd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaZ-pO-W2Y">
+                    <rect key="frame" x="0.0" y="151" width="390" height="659"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На данный момент нет сбережений. Добавьте вид сбережения." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pee-tO-KDS">
+                            <rect key="frame" x="20" y="284.66666666666669" width="350" height="89.666666666666686"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <color key="textColor" red="0.86446496210000001" green="0.86446496210000001" blue="0.86446496210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nm3-1v-rWy">
+                            <rect key="frame" x="145" y="390.33333333333337" width="100.33333333333331" height="34.333333333333314"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Добавить"/>
+                            <buttonConfiguration key="configuration" style="gray" title="Добавить"/>
+                            <connections>
+                                <action selector="addFinanceButtonDidTap:" destination="-1" eventType="touchUpInside" id="9vA-22-HbJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Pee-tO-KDS" firstAttribute="centerX" secondItem="OaZ-pO-W2Y" secondAttribute="centerX" id="4gF-OG-wwc"/>
+                        <constraint firstItem="nm3-1v-rWy" firstAttribute="top" secondItem="Pee-tO-KDS" secondAttribute="bottom" constant="16" id="MZE-NO-JlY"/>
+                        <constraint firstItem="nm3-1v-rWy" firstAttribute="centerX" secondItem="OaZ-pO-W2Y" secondAttribute="centerX" id="MmE-aq-2qd"/>
+                        <constraint firstItem="Pee-tO-KDS" firstAttribute="leading" secondItem="OaZ-pO-W2Y" secondAttribute="leading" constant="20" id="jEw-uk-MeW"/>
+                        <constraint firstItem="Pee-tO-KDS" firstAttribute="centerY" secondItem="OaZ-pO-W2Y" secondAttribute="centerY" id="vl6-ey-2cK"/>
+                        <constraint firstAttribute="trailing" secondItem="Pee-tO-KDS" secondAttribute="trailing" constant="20" id="yo1-O1-oJb"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGe-41-A0t">
+                    <rect key="frame" x="334" y="111" width="40" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="55u-vq-A5E"/>
+                        <constraint firstAttribute="width" constant="40" id="REh-VA-c8T"/>
+                    </constraints>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="addFinanceButtonDidTap:" destination="-1" eventType="touchUpInside" id="Jix-Kp-bjT"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить сбережение:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlF-xH-hqO">
+                    <rect key="frame" x="16" y="118" width="163" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="OGe-41-A0t" firstAttribute="top" secondItem="Q9C-eu-u6q" secondAttribute="bottom" id="1gh-LF-1oI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OGe-41-A0t" secondAttribute="trailing" constant="16" id="5ad-92-EQn"/>
+                <constraint firstItem="Q9C-eu-u6q" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.131517" id="6gN-aT-5Bv"/>
+                <constraint firstAttribute="bottom" secondItem="CyY-6I-GNd" secondAttribute="bottom" id="736-Dj-vwf"/>
+                <constraint firstItem="OaZ-pO-W2Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AYh-wR-4s4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CyY-6I-GNd" secondAttribute="trailing" id="Aeg-W3-tfl"/>
+                <constraint firstItem="dlF-xH-hqO" firstAttribute="centerY" secondItem="OGe-41-A0t" secondAttribute="centerY" id="EZU-iZ-Pgw"/>
+                <constraint firstItem="Q9C-eu-u6q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Gai-Sp-Nz8"/>
+                <constraint firstItem="dlF-xH-hqO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GzF-5M-RQS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OaZ-pO-W2Y" secondAttribute="bottom" id="J78-hh-xdX"/>
+                <constraint firstItem="CyY-6I-GNd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="W22-zd-zAW"/>
+                <constraint firstItem="Q9C-eu-u6q" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Wuw-YR-Wfp"/>
+                <constraint firstItem="CyY-6I-GNd" firstAttribute="top" secondItem="OGe-41-A0t" secondAttribute="bottom" id="YVV-I8-6Tz"/>
+                <constraint firstItem="Q9C-eu-u6q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iWr-Tk-7bc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OaZ-pO-W2Y" secondAttribute="trailing" id="lmb-18-QTM"/>
+                <constraint firstItem="OaZ-pO-W2Y" firstAttribute="top" secondItem="Q9C-eu-u6q" secondAttribute="bottom" constant="40" id="oUF-7d-9oX"/>
+            </constraints>
+            <point key="canvasLocation" x="27.69230769230769" y="-31.279620853080566"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
