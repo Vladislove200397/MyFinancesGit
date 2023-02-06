@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ChangeFinanceControllerType {
-    case plusValue
-    case minusValue
+enum ChangeFinanceControllerType: String {
+    case plusValue = "Доход"
+    case minusValue = "Расход"
 }

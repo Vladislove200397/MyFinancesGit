@@ -12,15 +12,17 @@ class ChangeFInanceViewController: UIViewController {
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var symbolLabel: UILabel!
+    @IBOutlet weak var addNotificationView: UIView!
+    @IBOutlet weak var addNotificationLabel: UILabel!
     
     private var controllerType: ChangeFinanceControllerType?
     private var inputText: String = ""
     private var financeModel = RealmFinanceType()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNumberButtons()
         setupVc()
+        addNotificationView.alpha = 0
     }
     
     override func viewWillLayoutSubviews() {
@@ -36,6 +38,7 @@ class ChangeFInanceViewController: UIViewController {
     private func setupVc() {
         typeLabel.text = financeModel.name
         numberLabel.text = "\(financeModel.value)"
+        addNotificationView.layer.cornerRadius = 8
     }
     
     private func setupNumberButtons() {
@@ -96,7 +99,8 @@ class ChangeFInanceViewController: UIViewController {
     
     private func updateDataInRealm() {
         let realmObject = financeModel
-        RealmManager<RealmFinanceType>().update { realm in
+        RealmManager<RealmFinanceType>().update {[weak self] realm in
+            guard let self else { return }
             try? realm.write {
                 let oldValue = realmObject.value
                 guard let value = Double(self.inputText) else { print("Error")
@@ -107,15 +111,33 @@ class ChangeFInanceViewController: UIViewController {
                         plusValue.plusValues = value
                         plusValue.date = .now
                         realmObject.value = oldValue + value
-                        realmObject.plusValues.append(plusValue)
+                        realmObject.plusValues.insert(plusValue, at: 0)
+                        self.showNotificationView(value: value, type: .plusValue, savingType: realmObject.name)
                     case .minusValue:
                         let minusValue = RealmFinanceMinusValueModel()
                         minusValue.minusValues = value
                         minusValue.date = .now
-                        realmObject.minusValues.append(minusValue)
+                        realmObject.minusValues.insert(minusValue, at: 0)
                         realmObject.value = oldValue - value
+                        self.showNotificationView(value: value, type: .minusValue, savingType: realmObject.name)
                     case .none:
                         break
+                }
+            }
+        }
+    }
+    
+    private func showNotificationView(value: Double, type: ChangeFinanceControllerType, savingType: String) {
+        addNotificationLabel.text = "Добавлено в статью '\(type.rawValue)' \(value) \(savingType)"
+        
+        UIView.animate(withDuration: 0.5) {[weak self] in
+            guard let self else { return }
+            self.addNotificationView.alpha = 1
+        } completion: {[weak self] isFinish in
+            guard let self else { return }
+            if isFinish {
+                UIView.animate(withDuration: 0.5, delay: 4) {
+                    self.addNotificationView.alpha = 0
                 }
             }
         }

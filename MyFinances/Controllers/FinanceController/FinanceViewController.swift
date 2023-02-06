@@ -90,8 +90,6 @@ extension FinanceViewController: UITableViewDelegate {
         let historyVC = FinanceHistoryViewController(nibName: String(describing: FinanceHistoryViewController.self), bundle: nil)
         historyVC.set(financeModel: realmRead[selectedIndex])
 
-        self.definesPresentationContext = true
-        historyVC.modalPresentationStyle = .overCurrentContext
         self.present(historyVC, animated: true, completion: nil)
     }
 }
