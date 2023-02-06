@@ -14,10 +14,11 @@ class StatisticsFinansViewController: UIViewController {
     
     private var data: [Currency] = []
     private var readRealm = RealmManager<RealmFinanceType>().read()
+    private var type = SavingType.money
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupPieChart()
-        setupMetallPieChart()
+        setupMoneyPieChart(.money)
+        setupMetallPieChart(.metalls)
         getData()
     }
     
@@ -28,8 +29,8 @@ class StatisticsFinansViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.readRealm = RealmManager<RealmFinanceType>().read()
-        setupPieChart()
-        setupMetallPieChart()
+        setupMoneyPieChart(.money)
+        setupMetallPieChart(.metalls)
     }
     
     private func setBackgroundGradient() {
@@ -40,14 +41,14 @@ class StatisticsFinansViewController: UIViewController {
     private func getData() {
         ConverterProvider().getCurrency { currencys in
             self.data = currencys
-            self.setupPieChart()
-            self.setupMetallPieChart()
+            self.setupMoneyPieChart(.money)
+            self.setupMetallPieChart(.metalls)
         } failure: { error in
             print(error)
         }
     }
     
-    private func setupPieChart() {
+    private func setupMoneyPieChart(_ withType: SavingType) {
         var colors: [NSUIColor] = []
         var arr: [PieChartDataEntry] = []
         var value = 0.0
@@ -56,7 +57,7 @@ class StatisticsFinansViewController: UIViewController {
             if let byn = readRealm.first(where: {$0.name == "BYN"}) {
                 bynModel = byn
             }
-            if financeModel.type == "Деньги" {
+            if financeModel.type == withType.rawValue {
                 let conversedToByn = Double(convertToByn(value: financeModel.value, financeAbb: financeModel.name))
                 guard let conversedFromByn = Double(convertFromByn(value: conversedToByn ?? bynModel.value)) else { return }
                 arr.append(PieChartDataEntry(value: conversedFromByn, label: financeModel.name))
@@ -82,12 +83,12 @@ class StatisticsFinansViewController: UIViewController {
         
     }
     
-    private func setupMetallPieChart() {
+    private func setupMetallPieChart(_ withType: SavingType) {
         var colors: [NSUIColor] = []
         var arr: [PieChartDataEntry] = []
         var value = 0.0
         readRealm.forEach { financeModel in
-            if financeModel.type == "Металлы" {
+            if financeModel.type == withType.rawValue {
                 arr.append(PieChartDataEntry(value: financeModel.value, label: financeModel.name))
                 colors.append(extractColorFrom(financeModel))
                 value += financeModel.value
