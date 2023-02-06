@@ -65,6 +65,7 @@ class StatisticsFinansViewController: UIViewController {
                 value += conversedFromByn
             }
         }
+        
         let dataSet = PieChartDataSet(entries: arr, label: "")
         dataSet.colors = colors
         pieChartView.data = PieChartData(dataSet: dataSet)
